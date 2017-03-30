@@ -1,0 +1,87 @@
+<html>
+<head>
+    <script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+    <script src="coursera_assign1.js"></script>
+    <link rel="stylesheet" href="coursera_assign1.css">
+</head>
+<body>
+    <form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php " enctype="multipart/form-data" method="post">
+        <fieldset>
+            <legend>Your Face</legend>
+            <label for="image">Your image: </label> <input type="file" name="image" id="image" required><br>
+            <label for="preview">Image preview:</label>
+            <img id="preview">
+        </fieldset>
+
+        <fieldset>
+            <legend>Your General Details</legend>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Your full name" required><br>
+
+            <label for="maleGender femaleGender">Gender:</label>
+            <input type="radio" name="gender" id="maleGender" value="male" required>Male
+            <input type="radio" name="gender" id="femaleGender" value="female" required>Female<br>
+
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" required><br>
+
+            <label for="birthdate">Date of birth:</label>
+            <input type="date" name="birthdate" id="birthdate" required><br>
+
+            <label for="favColor">Favorite color:</label>
+            <input type="color" name="color" id="color" required><br>
+
+            <label for="country">Which country:</label>
+            <select id="country" required>
+                <option value="China">China</option>
+                <option value="the US">the US</option>
+                <option value="Canada">Canada</option>
+                <option value="Belgium">Belgium</option>
+                <option value="France">France</option>
+                <option value="noSelection">No Selection</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>"Your Indicators"</legend>
+            <div id="rangeLabel">
+                <label for="heigh">Height:</label><br>
+                <label for="Salary">Salary:</label>
+            </div>
+            <div id="startRange">
+                <p>Short</p>
+                <p>Poor</p>
+            </div>
+            <div id="rangebar">
+                <input type="range" min="0" max="100" required><br>
+                <input type="range" min="0" max="100" required><br>
+            </div>
+
+            <div id="endRange">
+                <p>Tall</p>
+                <p>Poor</p>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Your Contact Information</legend>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required><br>
+
+            <label for="mobile">Mobile:</label>
+            <input type="tel" name="mobile" id="mobile" required><br>
+
+            <label for="address">Address:</label>
+            <textarea id="address" required></textarea><br>
+
+            <label for="contactMethod" required>Method to contact you:</label>
+            <input type="checkbox" name="contactMethod" value="Email">Email
+            <input type="checkbox" name="contactMethod" value="Whatsapp">Whatsapp
+            <input type="checkbox" name="contactMethod" value="In-app chat">In-app chat
+        </fieldset>
+
+        <input type="submit" value="submit">
+</body>
+</html>
+
+/*unsettled issue: checkbox required attribute*/
