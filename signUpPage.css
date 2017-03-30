@@ -1,0 +1,43 @@
+fieldset {
+    border: 10px solid yellow;
+    background-color: lightyellow;
+    margin-bottom: 10px;
+    width: 720;
+}
+
+label {
+    display: inline-block;
+    width: 180px;
+    text-align: right;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    width: auto;
+}
+
+#rangeLabel {
+    display: inline-block;
+}
+
+#rangebar {
+    display: inline-block;
+}
+
+#startRange {
+    text-align: center;
+    background-color: darkred;
+    color: white;
+    display: inline-block;
+}
+
+#endRange {
+    display: inline-block;
+    text-align: center;
+    background-color: darkmagenta;
+    color: white;
+}
+
+label:hover, input:hover {
+    font-size: 30px;
+}
+
